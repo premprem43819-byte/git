@@ -1,0 +1,224 @@
+.head {
+    display: flex;
+    background: linear-gradient(rgba(56, 196, 231, 0.771), rgba(1, 55, 232, 0.826), rgba(0, 17, 255, 0.87));
+    text-align: center;
+    width: 97%;
+    height: 20px;
+    margin-top: -7px;
+    padding: 25px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.title {
+    color: aliceblue;
+    padding-left: 50%;
+}
+
+.nav {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+}
+
+.nav:hover {
+    color: aliceblue;
+}
+
+.card1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+}
+
+.card:hover {
+
+    transform: scale(1.01);
+
+    transition-duration: 0.3s;
+}
+
+.background {
+
+    width: 100%;
+    height: 800px;
+    background: url("https://th.bing.com/th/id/OIP.np4shQaQbNX8NfiokJsa3wHaEK?w=275&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3");
+    background-size: cover;
+    animation: showcard 2s;
+    border-radius: 7px;
+    margin: 0%;
+}
+
+@keyframes showcard {
+    from {
+        transform: scale(2);
+    }
+
+}
+
+
+
+img {
+    padding: 10px;
+    width: 93%;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.card {
+    margin-top: 40px;
+    display: grid;
+    background-size: cover;
+    width: 25%;
+    text-align: center;
+    border-radius: 16px;
+    background: repeating-linear-gradient(rgb(23, 42, 246), rgba(29, 10, 238, 0.795), rgba(40, 7, 228, 0.888));
+    border: solid;
+    border-color: rgb(255, 252, 252);
+}
+
+.card {
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+
+}
+
+.card::after {
+    content: ""
+    ;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0%;
+    top: 0;
+    border-radius: 10px;
+}
+
+.card::before {
+    content: "";
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+@keyframes glowing {
+    0% {
+        background-color: 0 0
+    }
+
+    50% {
+        background-color: 400% 0;
+    }
+
+    100% {
+        background-color: 0 0;
+    }
+}
+
+.card:hover::before {
+    opacity: 2;
+
+}
+
+.card:active::after {
+    background: transparent;
+}
+
+.card:active {
+    color: #000;
+    font-size: bold;
+}
+
+.btn {
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+
+}
+
+.btn::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0%;
+    top: 0;
+    border-radius: 10px;
+}
+
+.btn::before {
+    content: "";
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    transition: opacity 3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+@keyframes glowing {
+    0% {
+        background-color: 0 0
+    }
+
+    50% {
+        background-color: 400% 0;
+    }
+
+    100% {
+        background-color: 0 0;
+    }
+}
+
+.cbtn:hover::before {
+    opacity: 1;
+
+}
+
+.btn:active::after {
+    background: transparent;
+}
+
+.btn:active {
+    color: #000;
+    font-size: bold;
+}
+
+.top {
+    text-align: center;
+    padding-left: 50%;
+    text-decoration: none;
+}
