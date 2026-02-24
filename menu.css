@@ -1,0 +1,93 @@
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f1d6d6;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    background-color: black;
+    text-align: center;
+    color: #f4f4f4;
+    cursor: grab;
+}
+h2 {
+    
+    margin-top: 40px;
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background-color: #e2a3cb;
+    
+    padding:20px;
+    border-radius: 15px;
+    border-style:solid;
+    border-width: 10px;
+    border-color: #6ae1f6e2;
+    gap: 20px;
+}
+
+.menu-item{
+    background-color: rgb(164, 237, 237);
+    padding: 15px;
+    border-radius: 15px;
+    border-style: solid;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.1) ;
+    
+}
+.menu-item:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+}
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.price{
+    font: bold;
+    color: rgb(2, 9, 15);
+}
+.starters {
+    background-color: #c8f49a;
+    padding: 20px;
+    border-radius: 10px;
+}
+.main-course {
+    background-color: #d4d09d;
+    padding: 20px;
+    border-radius: 10px;
+}
+.menu-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.desserts {
+    background-color: #f4dfe1;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.item{
+    background-color: rgb(188, 239, 239);
+    padding: 15px;
+    border: radius 10px; 
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.1) ;
+    
+    
+}
+.item:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+}
+.item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    
+}
+</style>
