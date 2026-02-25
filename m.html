@@ -1,0 +1,37 @@
+ <style>
+    /* Hero animation */
+    .fade-zoom {
+      animation: fadeZoom 1.5s ease forwards;
+    }
+
+    @keyframes fadeZoom {
+      0% {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    /* Destination card hover */
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    }
+
+    /* Pricing hover */
+    .price-hover {
+      transition: border-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .price-hover:hover {
+      border-color: #f97316;
+      transform: scale(1.03);
+    }
+  </style>
